@@ -20,7 +20,7 @@ import com.substring.chat.repository.RoomRepository;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("*")
 public class RoomController
 {
 	private RoomRepository roomRepository;

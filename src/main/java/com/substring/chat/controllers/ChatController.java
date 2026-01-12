@@ -25,7 +25,7 @@ public class ChatController
 	
 	@MessageMapping("/sendMessage/{roomId}")
 	@SendTo("/topic/room/{roomId}")
-	@CrossOrigin("http://localhost:5173")
+	@CrossOrigin(origins = "*")
 	public Message sendMessage(
 		@DestinationVariable String roomId,
 		@RequestBody MessageRequest request
